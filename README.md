@@ -68,6 +68,12 @@ LazyVim-based Neovim configuration for PHP/Laravel/Filament development.
 | `lewis6991/gitsigns.nvim` | Signs + inline blame activado |
 | `f-person/git-blame.nvim` | Blame extendido con URLs de commits |
 
+### Folding
+| Plugin | Descripción |
+|--------|-------------|
+| `kevinhwang91/nvim-ufo` | Folding moderno con providers treesitter/indent; Blade usa indent |
+| `kevinhwang91/promise-async` | Dependencia de nvim-ufo |
+
 ---
 
 ## Opciones destacadas

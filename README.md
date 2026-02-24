@@ -230,6 +230,17 @@ LazyVim-based Neovim configuration for PHP/Laravel/Filament development.
 | `<leader>gcp` | Conflict: Previous |
 | `<leader>gcl` | Conflict: List |
 
+### Folding (nvim-ufo)
+
+| Keymap | Acción |
+|--------|--------|
+| `zR` | Abrir todos los folds |
+| `zM` | Cerrar todos los folds |
+| `zK` | Preview del fold bajo el cursor |
+| `za` | Toggle fold bajo el cursor |
+| `zc` | Cerrar fold |
+| `zo` | Abrir fold |
+
 ---
 
 ## Snippets disponibles

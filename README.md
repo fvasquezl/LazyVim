@@ -68,6 +68,12 @@ LazyVim-based Neovim configuration for PHP/Laravel/Filament development.
 | `lewis6991/gitsigns.nvim` | Signs + inline blame activado |
 | `f-person/git-blame.nvim` | Blame extendido con URLs de commits |
 
+### UI
+| Plugin | Descripción |
+|--------|-------------|
+| `catppuccin/nvim` | Tema principal; `flavour = auto` (mocha oscuro / latte claro) |
+| `folke/snacks.nvim` | Dashboard con header ASCII personalizado |
+
 ### Folding
 | Plugin | Descripción |
 |--------|-------------|

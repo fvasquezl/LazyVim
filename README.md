@@ -70,9 +70,65 @@ LazyVim-based Neovim configuration for PHP/Laravel/Filament development.
 
 ---
 
+## Opciones destacadas
+
+| Opción | Valor | Efecto |
+|--------|-------|--------|
+| `leader` | `Space` | Tecla líder |
+| `fileencoding` | `utf-8` | Codificación de archivos |
+| `number` | `true` | Números de línea |
+| `cmdheight` | `0` | Barra de comandos oculta cuando no se usa |
+| `laststatus` | `3` | Statusline global única |
+| `scrolloff` | `10` | 10 líneas de contexto al hacer scroll |
+| `expandtab` | `true` | Tabs → espacios |
+| `shiftwidth` / `tabstop` | `2` | Indentación de 2 espacios |
+| `wrap` | `false` | Sin salto de línea automático |
+| `ignorecase` | `true` | Búsqueda case-insensitive (salvo `/C` o mayúsculas) |
+| `inccommand` | `split` | Preview de `:s` en split antes de confirmar |
+| `splitbelow` / `splitright` | `true` | Splits abren abajo y a la derecha |
+| `mouse` | `""` | Mouse desactivado |
+| `shell` | sistema | No se sobreescribe (evita incompatibilidades POSIX) |
+
+**Globals de LazyVim:**
+- `lazyvim_php_lsp = "intelephense"` — LSP de PHP
+- `lazyvim_picker = "telescope"` — Picker
+- `lazyvim_cmp = "blink.cmp"` — Motor de autocompletado
+- `lazyvim_prettier_needs_config = true` — Prettier solo si hay config en el proyecto
+
+---
+
+## Autocmds
+
+| Evento | Archivos | Efecto |
+|--------|----------|--------|
+| `InsertLeave` | `*` | Desactiva modo paste al salir de insert |
+| `FileType` | `json`, `jsonc`, `markdown` | `conceallevel = 0` — muestra todos los caracteres sin ocultar sintaxis |
+
+---
+
 ## Keymaps
 
 > `<leader>` = Space
+
+### General (`keymaps.lua`)
+
+| Keymap | Modo | Acción |
+|--------|------|--------|
+| `x`, `<leader>c/C/d/D` | `n/v` | Borrar/cambiar sin afectar el registro |
+| `<leader>p/P` | `n/v` | Pegar desde registro `0` (último yank) |
+| `+` / `-` | `n` | Incrementar / decrementar número |
+| `dw` | `n` | Borrar palabra hacia atrás sin afectar registro |
+| `<C-a>` | `n` | Seleccionar todo el archivo |
+| `<leader>o/O` | `n` | Nueva línea abajo/arriba sin copiar indentación |
+| `<C-m>` | `n` | Jumplist hacia adelante |
+| `te` | `n` | Nuevo tab |
+| `<tab>` / `<s-tab>` | `n` | Tab siguiente / anterior |
+| `ss` / `sv` | `n` | Split horizontal / vertical |
+| `sh/sk/sj/sl` | `n` | Moverse entre ventanas |
+| `<C-w>` + flechas | `n` | Redimensionar ventana |
+| `<C-j>` | `n` | Ir al siguiente diagnóstico |
+| `<leader>i` | `n` | Toggle inlay hints |
+| `:ToggleAutoformat` | cmd | Toggle autoformato |
 
 ### Laravel
 | Keymap | Acción |

@@ -71,7 +71,7 @@ LazyVim-based Neovim configuration for PHP/Laravel/Filament development.
 ### UI
 | Plugin | Descripción |
 |--------|-------------|
-| `catppuccin/nvim` | Tema principal; `flavour = auto` (mocha oscuro / latte claro) |
+| `craftzdog/solarized-osaka.nvim` | Tema principal; fondo transparente, lualine con colores solarized dark |
 | `folke/snacks.nvim` | Dashboard con header ASCII personalizado |
 
 ### Folding
